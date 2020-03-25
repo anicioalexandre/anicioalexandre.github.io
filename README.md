@@ -1,3 +1,3 @@
 # anicioalexandre.github.io
 GitHub Pages
-Firsts steps HTML + CSS!
+Firsts Steps HTML + CSS!
