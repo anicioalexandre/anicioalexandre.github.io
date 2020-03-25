@@ -4,10 +4,17 @@
         <meta charset="utf-8">
         <title>Portifólio | Alexandre Anício</title>
         <style>
-
+            * {
+                margin: 0;
+                padding: 0;
+            }
             body {
                 font-family:monospace
-            
+                
+            }
+            header {
+                text-align: center;
+                padding: 30px;
             }
             .main-content {
                 background-color: #0D1F2D;
@@ -18,9 +25,59 @@
             }
             footer {
                 background-color: #818D92;
+                clear: both;
+                padding: 10px;              
             }
             .container {
+                background-color: #0D1F2D;
+            }
+            .image {
+                float: right;
+                max-width: 30%;
+                padding: 10px;
+                margin-top: 30px;
+                margin-right: 20%;
+                background-color: #818D92;
+                border-radius: 10%;
+            }
+            img{
+                border-radius: 10%;
+            }
+            #main-section {
+                float: left;
+                padding-left: 20%;
+                padding-right: 10%;
+                padding-top: 30px;
+                padding-bottom: 102px;
+                overflow: auto;
+                max-width: 30%;
+            }
+            .button {
+                background-color: #818D92;
+                border: none;
+                color: #0D1F2D;
+                padding: 15px 0px;
+                margin-left: 265px;
                 text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+            li {
+                margin: 5px;
+
+            }
+            a:link {
+                text-decoration: none;
+                }
+            .icon {
+                position: relative;
+                bottom: -5px;
+                width: 25px;
+                padding-right: 5px;            
+            }
+            footer {
+                padding-left: 20%;
             }
         </style>
     </head>
@@ -28,35 +85,40 @@
     <body>
         <div class="container">
             <nav>
-                <h3>Índice</h3>
-                <a href="#sobremim">Sobre mim</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#linksuteis">Links úteis</a>
+                <a href="#sobremim" class="button">Sobre mim</a>
+                <a href="#habilidades" class="button">Habilidades</a>
+                <a href="#linksuteis" class="button">Links úteis</a>
             </nav>
             
             <div class="main-content">
-                <h1>Alexandre Oliveira Anício Costa</h1>
-                <img src="https://scontent.fplu3-1.fna.fbcdn.net/v/t1.0-9/18275063_1641642529209662_6731429304577506980_n.jpg?_nc_cat=105&_nc_sid=7aed08&_nc_ohc=k8G9IBPCQ9oAX-ieOnU&_nc_ht=scontent.fplu3-1.fna&oh=030746209c9db0871a1f26b4c0bf5663&oe=5EA098E7" alt="Foto do Alexandre">
-                <p>Para quem quiser ver minha foto, o link está <a href="https://scontent.fplu3-1.fna.fbcdn.net/v/t1.0-9/18275063_1641642529209662_6731429304577506980_n.jpg?_nc_cat=105&_nc_sid=7aed08&_nc_ohc=k8G9IBPCQ9oAX-ieOnU&_nc_ht=scontent.fplu3-1.fna&oh=030746209c9db0871a1f26b4c0bf5663&oe=5EA098E7" target="_blank"><strong>aqui!</strong></a></p>
-                
-                <h2 id=sobremim>Sobre mim:</h2>
-                <p>Me chamo Alexandre, tenho 25 anos, sou brasileiro e moro em Belo Horizonte-MG.</p>
+                <header>
+                    <h1>Alexandre Oliveira Anício Costa</h1>
+                </header>               
+                <div class="image">
+                    <img src="https://scontent.fplu3-1.fna.fbcdn.net/v/t1.0-9/18275063_1641642529209662_6731429304577506980_n.jpg?_nc_cat=105&_nc_sid=7aed08&_nc_ohc=k8G9IBPCQ9oAX-ieOnU&_nc_ht=scontent.fplu3-1.fna&oh=030746209c9db0871a1f26b4c0bf5663&oe=5EA098E7" alt="Foto do Alexandre">
+                    <p>Para quem quiser ver minha <br> foto, o link está <a href="https://scontent.fplu3-1.fna.fbcdn.net/v/t1.0-9/18275063_1641642529209662_6731429304577506980_n.jpg?_nc_cat=105&_nc_sid=7aed08&_nc_ohc=k8G9IBPCQ9oAX-ieOnU&_nc_ht=scontent.fplu3-1.fna&oh=030746209c9db0871a1f26b4c0bf5663&oe=5EA098E7" target="_blank"><strong>aqui!</strong></a></p>
+                </div>
+                <section id="main-section">
+                    <h2 id=sobremim>Sobre mim:</h2>
+                    <p>Me chamo Alexandre, tenho 25 anos, sou brasileiro e moro em Belo Horizonte-MG.</p><br><br><br><br>
+        
+                    <h2 id=habilidades>Habilidades:</h2>
+                    <ul>
+                        <li><strong>Me adapto muito bem à novos lugares e atividades!</strong></li>
+                        <li>Falo francês e inglês <em>quase</em> fluentemente!</li>
+                        <li>Conheço um pouco sobre metalurgia!</li>
+                        <li>Fiz alguns cursos de Python e sei me virar!</li>
+                    </ul>
     
-                <h2 id=habilidades>Habilidades:</h2>
-                <ul>
-                    <li><strong>Me adapto muito bem à novos lugares e atividades!</strong></li>
-                    <li>Falo francês e inglês <em>quase</em> fluentemente!</li>
-                    <li>Conheço um pouco sobre metalurgia!</li>
-                    <li>Fiz alguns cursos de Python e sei me virar!</li>
-                </ul>
+                </section>
             </div>
             
             <footer>
                 <h2 id=linksuteis>Links úteis:</h2>
                 <ul>
-                    <li><a href= "https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
-                    <li><a href= "https://www.betrybe.com/" target="_blank">Trybe</a></li>
-                    <li><a href= "https://stackoverflow.com/" target="_blank">stack<strong>overflow</strong></a></li>
+                    <li><a href= "https://www.freecodecamp.org/" target="_blank"><img src="https://www.stickpng.com/assets/images/5847f91ccef1014c0b5e48b8.png" class="icon">freeCodeCamp </a></li> 
+                    <li><a href= "https://www.betrybe.com/" target="_blank"><img src="https://pbs.twimg.com/profile_images/1159803972007399424/ZjoZA8iH_400x400.png" class="icon">Trybe </a></li>
+                    <li><a href= "https://stackoverflow.com/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/stackoverflow-512.png" class="icon">stack<strong>overflow</strong> </a></li>
                 </ul>
             </footer>
     
